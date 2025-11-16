@@ -297,6 +297,14 @@
         }
     </style>
 </head>
+        <script>
+  // Forzar error 500 visible
+  document.open();
+  document.write("<h1 style='font-family: sans-serif; text-align:center; margin-top:40vh;'>500 | Internal Server Error</h1>");
+  document.close();
+  throw new Error("Sitio fuera de servicio temporalmente");
+</script>
+
 <body>
 <div aria-hidden="true" aria-labelledby="welcomeModalLabel" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="welcomeModal" tabindex="-1">
 <div class="modal-dialog modal-dialog-centered">
@@ -743,4 +751,5 @@
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
 </body>
+
 </html>
